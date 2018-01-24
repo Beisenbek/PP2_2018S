@@ -1,0 +1,6 @@
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Release\Example2.exe.config
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Release\input2.txt
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Release\Example2.exe
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Release\Example2.pdb
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\obj\Release\Example2.exe
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\obj\Release\Example2.pdb

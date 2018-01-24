@@ -1,0 +1,7 @@
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Debug\Example2.exe.config
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Debug\Example2.exe
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Debug\Example2.pdb
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\obj\Debug\Example2.csprojResolveAssemblyReference.cache
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\obj\Debug\Example2.exe
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\obj\Debug\Example2.pdb
+c:\Users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\Example2\bin\Debug\input2.txt

@@ -1,0 +1,6 @@
+c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\bin\Debug\PP2_W3D1.exe.config
+c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\bin\Debug\PP2_W3D1.exe
+c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\bin\Debug\PP2_W3D1.pdb
+c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.csprojResolveAssemblyReference.cache
+c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.exe
+c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.pdb
