@@ -13,7 +13,7 @@ namespace PP2_W3D1
         {
             //Environment.GetLogicalDrives();
             Console.SetWindowSize(40, 40);
-            FAR far = new FAR(@"C:\");
+            FAR far = new FAR(@"C:\Data");
 
             bool quit = false;
 

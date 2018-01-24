@@ -9,33 +9,39 @@ namespace PP2_W3D1
 {
     class Layer
     {
+        public DirectoryInfo dirInfo;
+        public string path;
+        public int index;
+        public List<FileSystemInfo> items;
+
         public Layer(string path, int index)
         {
             this.path = path;
             this.index = index;
             this.dirInfo = new DirectoryInfo(path);
+
+            items = new List<FileSystemInfo>();
+            items.AddRange(dirInfo.GetDirectories());
+            items.AddRange(dirInfo.GetFiles());
+
         }
-        public DirectoryInfo dirInfo;
-        public string path;
-        public int index;
 
         public void Process(int v)
         {
             this.index += v;
             if (this.index < 0)
             {
-                this.index = this.dirInfo.GetFileSystemInfos().Length - 1;
+                this.index = items.Count - 1;
             }
-
-            if (this.index >= this.dirInfo.GetFileSystemInfos().Length)
+            if (this.index >= items.Count)
             {
                 this.index = 0;
             }
         }
 
-        public string GetSelectedDirInfo()
+        public string GetSelectedItemInfo()
         {
-            return this.dirInfo.GetDirectories()[index].FullName;
+            return this.items[index].FullName;
         }
     }
 }

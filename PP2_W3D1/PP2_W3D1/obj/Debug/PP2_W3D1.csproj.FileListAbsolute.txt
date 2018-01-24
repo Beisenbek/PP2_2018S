@@ -4,3 +4,9 @@ c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\bin\
 c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.csprojResolveAssemblyReference.cache
 c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.exe
 c:\users\b.baisakov\documents\visual studio 2015\Projects\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W3D1\PP2_W3D1\bin\Debug\PP2_W3D1.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W3D1\PP2_W3D1\bin\Debug\PP2_W3D1.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W3D1\PP2_W3D1\bin\Debug\PP2_W3D1.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W3D1\PP2_W3D1\obj\Debug\PP2_W3D1.csprojResolveAssemblyReference.cache
