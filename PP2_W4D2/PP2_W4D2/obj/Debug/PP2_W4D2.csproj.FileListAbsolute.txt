@@ -1,0 +1,6 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W4D2\PP2_W4D2\bin\Debug\PP2_W4D2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W4D2\PP2_W4D2\bin\Debug\PP2_W4D2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W4D2\PP2_W4D2\bin\Debug\PP2_W4D2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W4D2\PP2_W4D2\obj\Debug\PP2_W4D2.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W4D2\PP2_W4D2\obj\Debug\PP2_W4D2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W4D2\PP2_W4D2\obj\Debug\PP2_W4D2.pdb
