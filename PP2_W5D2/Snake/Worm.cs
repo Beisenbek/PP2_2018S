@@ -6,33 +6,23 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    public class Worm
+    public class Worm:GameObject
     {
-        public Worm(Point head, char sign, ConsoleColor color)
+        public Worm(Point firstPoint, ConsoleColor color, char sign):base(firstPoint,color,sign)
         {
-            this.body = new List<Point>();
-            this.body.Add(head);
-            this.sign = sign;
-            this.color = color;
-        }
 
-        public List<Point> body { get; set; }
-        public char sign { get;}
-        public ConsoleColor color { get;}
-        public void Draw()
-        {
-            Console.ForegroundColor = color;
-            foreach(Point p in body)
-            {
-                Console.SetCursorPosition(p.X, p.Y);
-                Console.Write(sign);
-            }
         }
-
         public void Move(int dx, int dy)
         {
-            body[0].X = body[0].X + dx;
-            body[0].Y = body[0].Y + dy;
+            Point newHeadPos = new Point { X = body[0].X + dx, Y = body[0].Y + dy };
+
+            for(int i = body.Count -1; i > 0; --i)
+            {
+                body[i].X = body[i - 1].X;
+                body[i].Y = body[i - 1].Y;
+            }
+
+            body[0] = newHeadPos;
         }
     }
 }

@@ -11,8 +11,9 @@ namespace Snake
         static void Main(string[] args)
         {
             Game game = new Game();
+            game.SetupBoard();
 
-            while (true)
+            while (game.isAlive)
             {
                 game.Draw();
                 ConsoleKeyInfo pressedButton = Console.ReadKey();
