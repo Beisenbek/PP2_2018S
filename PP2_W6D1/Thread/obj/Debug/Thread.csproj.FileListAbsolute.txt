@@ -1,0 +1,6 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W6D1\Thread\bin\Debug\Thread.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W6D1\Thread\bin\Debug\Thread.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W6D1\Thread\bin\Debug\Thread.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W6D1\Thread\obj\Debug\Thread.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W6D1\Thread\obj\Debug\Thread.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W6D1\Thread\obj\Debug\Thread.pdb
