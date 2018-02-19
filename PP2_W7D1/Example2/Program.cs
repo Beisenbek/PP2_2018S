@@ -17,15 +17,18 @@ namespace Example2
             {
                 ConsoleKeyInfo pressedButton = Console.ReadKey();
 
-                switch (pressedButton.Key)
+                if (pressedButton.Modifiers == ConsoleModifiers.Control)
                 {
-                    case ConsoleKey.Spacebar:
-                        tr.Abort();
-                        break;
-                    case ConsoleKey.Enter:
-                        tr = new Thread(new ThreadStart(DoIt));
-                        tr.Start();
-                        break;
+                    switch (pressedButton.Key)
+                    {
+                        case ConsoleKey.Spacebar:
+                            tr.Abort();
+                            break;
+                        case ConsoleKey.Enter:
+                            tr = new Thread(new ThreadStart(DoIt));
+                            tr.Start();
+                            break;
+                    }
                 }
             }
             
