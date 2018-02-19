@@ -1,0 +1,5 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W7D1\Example2\bin\Debug\Example2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W7D1\Example2\bin\Debug\Example2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W7D1\Example2\bin\Debug\Example2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W7D1\Example2\obj\Debug\Example2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W7D1\Example2\obj\Debug\Example2.pdb
