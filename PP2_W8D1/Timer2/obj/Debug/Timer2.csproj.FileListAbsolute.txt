@@ -1,0 +1,5 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Timer2\bin\Debug\Timer2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Timer2\bin\Debug\Timer2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Timer2\bin\Debug\Timer2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Timer2\obj\Debug\Timer2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Timer2\obj\Debug\Timer2.pdb

@@ -1,0 +1,14 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\bin\Debug\Snake.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\bin\Debug\Snake.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\bin\Debug\Snake.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\obj\Debug\Snake.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\obj\Debug\Snake.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W5D2\Snake\bin\Debug\Levels\Level1.txt
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\bin\Debug\Snake.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\obj\Debug\Snake.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\obj\Debug\Snake.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\bin\Debug\Levels\Level1.txt
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\bin\Debug\Snake.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\bin\Debug\Snake.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W8D1\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
