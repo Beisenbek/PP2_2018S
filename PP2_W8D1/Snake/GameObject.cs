@@ -38,6 +38,7 @@ namespace Snake
             {
                 Console.SetCursorPosition(p.X, p.Y);
                 Console.Write(sign);
+                Console.SetCursorPosition(p.X, p.Y);
             }
         }
     }
