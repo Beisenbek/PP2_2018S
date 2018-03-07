@@ -1,0 +1,9 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\bin\Debug\Example1.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\bin\Debug\Example1.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\bin\Debug\Example1.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\obj\Debug\Example1.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\obj\Debug\Example1.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\obj\Debug\Example1.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\obj\Debug\Example1.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\obj\Debug\Example1.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W9D2\Example1\obj\Debug\Example1.pdb
