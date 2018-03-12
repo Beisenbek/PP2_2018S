@@ -1,0 +1,5 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApp\bin\Debug\CalcConsoleApp.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApp\bin\Debug\CalcConsoleApp.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApp\bin\Debug\CalcConsoleApp.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApp\obj\Debug\CalcConsoleApp.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApp\obj\Debug\CalcConsoleApp.pdb

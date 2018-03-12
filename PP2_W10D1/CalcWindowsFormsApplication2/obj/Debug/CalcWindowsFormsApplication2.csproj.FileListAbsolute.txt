@@ -1,0 +1,9 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\bin\Debug\CalcWindowsFormsApplication2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\bin\Debug\CalcWindowsFormsApplication2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\bin\Debug\CalcWindowsFormsApplication2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\obj\Debug\CalcWindowsFormsApplication2.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\obj\Debug\CalcWindowsFormsApplication2.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\obj\Debug\CalcWindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\obj\Debug\CalcWindowsFormsApplication2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\obj\Debug\CalcWindowsFormsApplication2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcWindowsFormsApplication2\obj\Debug\CalcWindowsFormsApplication2.csprojResolveAssemblyReference.cache

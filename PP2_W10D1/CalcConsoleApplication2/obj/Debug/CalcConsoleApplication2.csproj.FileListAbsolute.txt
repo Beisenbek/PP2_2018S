@@ -1,0 +1,8 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\bin\Debug\CalcConsoleApplication2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\bin\Debug\CalcConsoleApplication2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\bin\Debug\CalcConsoleApplication2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\bin\Debug\CalcWindowsFormsApplication2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\bin\Debug\CalcWindowsFormsApplication2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\obj\Debug\CalcConsoleApplication2.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\obj\Debug\CalcConsoleApplication2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\CalcConsoleApplication2\obj\Debug\CalcConsoleApplication2.pdb

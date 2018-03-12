@@ -1,0 +1,9 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\bin\Debug\Delegates.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\bin\Debug\Delegates.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\obj\Debug\Delegates.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\obj\Debug\Delegates.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\obj\Debug\Delegates.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\obj\Debug\Delegates.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\obj\Debug\Delegates.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates\obj\Debug\Delegates.pdb

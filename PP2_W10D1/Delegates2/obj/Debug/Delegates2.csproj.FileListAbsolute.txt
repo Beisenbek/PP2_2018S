@@ -1,0 +1,5 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates2\bin\Debug\Delegates2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates2\bin\Debug\Delegates2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates2\bin\Debug\Delegates2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates2\obj\Debug\Delegates2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates2\obj\Debug\Delegates2.pdb

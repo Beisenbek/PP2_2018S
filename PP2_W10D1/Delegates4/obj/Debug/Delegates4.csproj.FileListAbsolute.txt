@@ -1,0 +1,8 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\bin\Debug\Delegates4.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\bin\Debug\Delegates4.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\bin\Debug\Delegates4.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\obj\Debug\Delegates4.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\obj\Debug\Delegates4.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\obj\Debug\Delegates4.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\obj\Debug\Delegates4.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W10D1\Delegates4\obj\Debug\Delegates4.pdb
