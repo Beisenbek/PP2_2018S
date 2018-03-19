@@ -1,0 +1,9 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\bin\Debug\Graphics1.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\bin\Debug\Graphics1.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\bin\Debug\Graphics1.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\obj\Debug\Graphics1.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\obj\Debug\Graphics1.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\obj\Debug\Graphics1.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\obj\Debug\Graphics1.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\obj\Debug\Graphics1.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D1\Graphics1\obj\Debug\Graphics1.pdb
