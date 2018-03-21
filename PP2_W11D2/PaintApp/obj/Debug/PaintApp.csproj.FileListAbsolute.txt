@@ -1,0 +1,9 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\bin\Debug\PaintApp.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\bin\Debug\PaintApp.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\bin\Debug\PaintApp.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\obj\Debug\PaintApp.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\obj\Debug\PaintApp.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\obj\Debug\PaintApp.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\obj\Debug\PaintApp.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\obj\Debug\PaintApp.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W11D2\PaintApp\obj\Debug\PaintApp.pdb
