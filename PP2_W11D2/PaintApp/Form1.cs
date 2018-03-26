@@ -24,15 +24,32 @@ namespace PaintApp
         {
             InitializeComponent();
 
-            bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            pictureBox1.Image = bmp;
-            gfx = Graphics.FromImage(bmp);
-
-            gfx.Clear(Color.White);
-
-            gfx.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            SetupPictureBox(false, "");
+         
             pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
             pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+        }
+
+        private void SetupPictureBox(bool fromFile, string fileName)
+        {
+
+            if (!fromFile)
+            {
+                bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            }else
+            {
+                bmp = new Bitmap(Bitmap.FromFile(openFileDialog1.FileName));
+            }
+
+            gfx = Graphics.FromImage(bmp);
+
+            if (!fromFile)
+            {
+                gfx.Clear(Color.White);
+            }
+
+            pictureBox1.Image = bmp;
+            gfx.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -188,6 +205,14 @@ namespace PaintApp
             if(saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image.Save(saveFileDialog1.FileName);
+            }
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                SetupPictureBox(true, openFileDialog1.FileName);
             }
         }
     }
