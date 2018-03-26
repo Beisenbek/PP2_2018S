@@ -24,32 +24,34 @@ namespace PaintApp
         {
             InitializeComponent();
 
-            SetupPictureBox(false, "");
+            SetupPictureBox(BmpCreationMode.Init, "");
          
             pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
             pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
         }
 
-        private void SetupPictureBox(bool fromFile, string fileName)
+        private void SetupPictureBox(BmpCreationMode mode, string fileName)
         {
 
-            if (!fromFile)
+            if (mode == BmpCreationMode.Init)
             {
                 bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            }else
+            }else if(mode == BmpCreationMode.FromFile)
             {
                 bmp = new Bitmap(Bitmap.FromFile(openFileDialog1.FileName));
             }
 
             gfx = Graphics.FromImage(bmp);
 
-            if (!fromFile)
+            if (mode == BmpCreationMode.Init)
             {
                 gfx.Clear(Color.White);
             }
 
             pictureBox1.Image = bmp;
             gfx.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+
+            
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -62,7 +64,7 @@ namespace PaintApp
 
                 MapFill mf = new MapFill();
                 mf.Fill(gfx, firstPoint, pen.Color,ref bmp);
-                pictureBox1.Image = bmp;
+                SetupPictureBox(BmpCreationMode.AfterFill, "");
             }
         }
 
@@ -212,7 +214,7 @@ namespace PaintApp
         {
             if(openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                SetupPictureBox(true, openFileDialog1.FileName);
+                SetupPictureBox(BmpCreationMode.FromFile, openFileDialog1.FileName);
             }
         }
     }
@@ -225,5 +227,12 @@ namespace PaintApp
         Circle,
         Triangle,
         Line
+    }
+
+    enum BmpCreationMode
+    {
+        AfterFill,
+        FromFile,
+        Init
     }
 }
