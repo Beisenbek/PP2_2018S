@@ -170,18 +170,17 @@ namespace Battleship
                     break;
                 case GameState.Ship3Db:
                     break;
-                case GameState.Ship1Dd:
                 case GameState.Ship2Da:
                 case GameState.Ship2Db:
+                case GameState.Ship2Dc:
                     MarkCell(i, j);
                     MarkCell(i, j + 1);
                     break;
-                case GameState.Ship2Dc:
                     break;
-                case GameState.Start:
                 case GameState.Ship1Da:
                 case GameState.Ship1Db:
                 case GameState.Ship1Dc:
+                case GameState.Ship1Dd:
                     MarkCell(i, j);
                     break;
                 case GameState.Play:
