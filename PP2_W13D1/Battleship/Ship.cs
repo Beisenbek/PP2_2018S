@@ -16,7 +16,7 @@ namespace Battleship
     }
     class Ship
     {
-        public List<Point> body = new List<Point>();
+        public List<ShipPoint> body = new List<ShipPoint>();
         ShipType type;
 
         public Ship(Point p, ShipType type)
@@ -30,22 +30,25 @@ namespace Battleship
             switch (type)
             {
                 case ShipType.D1:
-                    body.Add(new Point(p.X,p.Y));
+                    body.Add(new ShipPoint { X = p.X, Y = p.Y, PType = PartType.ShipPart });
                     break;
                 case ShipType.D2:
-                    body.Add(new Point(p.X, p.Y));
-                    body.Add(new Point(p.X + 1, p.Y));
+                    for(int i = 0; i < 2; ++i)
+                    {
+                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
+                    }
                     break;
                 case ShipType.D3:
-                    body.Add(new Point(p.X, p.Y));
-                    body.Add(new Point(p.X + 1, p.Y));
-                    body.Add(new Point(p.X + 2, p.Y));
+                    for (int i = 0; i < 3; ++i)
+                    {
+                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
+                    }
                     break;
                 case ShipType.D4:
-                    body.Add(new Point(p.X, p.Y));
-                    body.Add(new Point(p.X + 1, p.Y));
-                    body.Add(new Point(p.X + 2, p.Y));
-                    body.Add(new Point(p.X + 3, p.Y));
+                    for (int i = 0; i < 4; ++i)
+                    {
+                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
+                    }
                     break;
                 default:
                     break;

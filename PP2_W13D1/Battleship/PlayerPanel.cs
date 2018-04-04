@@ -22,25 +22,39 @@ namespace Battleship
 
     class PlayerPanel : Panel
     {
-        Brain brain;
+        public Brain brain;
         int cellW = 20;
         PanelPosition panelPosition;
         PlayerType playerType;
+        TurnDelegate tDelegate;
 
-        public PlayerPanel(PanelPosition panelPosition, PlayerType playerType)
+        public PlayerPanel(PanelPosition panelPosition, PlayerType playerType,TurnDelegate tDelegate)
         {
             this.panelPosition = panelPosition;
             this.playerType = playerType;
+            this.tDelegate = tDelegate;
 
             Initialize();
-            Random rnd = new Random();
+            Random rnd1 = new Random(Guid.NewGuid().GetHashCode());
+            Random rnd2 = new Random(Guid.NewGuid().GetHashCode());
+
+            if (playerType == PlayerType.Human)
+            {
+                while (brain.stIndex < brain.st.Length - 1)
+                {
+                    int row = rnd1.Next(0, 10);
+                    int column = rnd1.Next(0, 10);
+                    string msg = string.Format("{0}_{1}", row, column);
+                    brain.Process(msg);
+                }
+            }
 
             if (playerType == PlayerType.Bot)
             {
                 while (brain.stIndex < brain.st.Length - 1)
                 {
-                    int row = rnd.Next(0, 10);
-                    int column = rnd.Next(0, 10);
+                    int row = rnd2.Next(0, 10);
+                    int column = rnd2.Next(0, 10);
                     string msg = string.Format("{0}_{1}", row, column);
                     brain.Process(msg);
                 }
@@ -84,14 +98,15 @@ namespace Battleship
             }
             else
             {
-                brain.Process2(btn.Name);
+                if (!brain.Process2(btn.Name))
+                {
+                    tDelegate.Invoke();
+                }
             }
         }
 
         private void ChangeButton(CellState[,] map)
         {
-           
-
             for (int i = 0; i < 10; ++i)
             {
                 for (int j = 0; j < 10; ++j)

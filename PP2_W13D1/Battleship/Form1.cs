@@ -17,10 +17,9 @@ namespace Battleship
         {
             InitializeComponent();
 
-            PlayerPanel p1 = new PlayerPanel(PanelPosition.Left,PlayerType.Human);
-            PlayerPanel p2 = new PlayerPanel(PanelPosition.Right, PlayerType.Bot);
-            this.Controls.Add(p1);
-            this.Controls.Add(p2);
+            GameLogic gl = new GameLogic();
+            this.Controls.Add(gl.p1);
+            this.Controls.Add(gl.p2);
         }
 
     }

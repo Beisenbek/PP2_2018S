@@ -48,8 +48,10 @@ namespace Battleship
         }
 
 
-        public void Process2(string msg)
+        public bool Process2(string msg)
         {
+            bool successShoot = false;
+
             string[] val = msg.Split('_');
             int i = int.Parse(val[0]);
             int j = int.Parse(val[1]);
@@ -61,10 +63,12 @@ namespace Battleship
                     break;
                 case CellState.busy:
                     map[i, j] = CellState.striked;
+                    successShoot = true;
+
                     int index = -1;
                     for(int k = 0; k < units.Count; ++k)
                     {
-                        foreach(Point p in units[k].body)
+                        foreach(ShipPoint p in units[k].body)
                         {
                             if(p.X == i && p.Y == j)
                             {
@@ -79,13 +83,11 @@ namespace Battleship
 
                     }
 
-
-
                     if (index != -1)
                     {
                         bool killed = true;
 
-                        foreach (Point p in units[index].body)
+                        foreach (ShipPoint p in units[index].body)
                         {
                             if (map[p.X, p.Y] != CellState.striked)
                             {
@@ -96,7 +98,7 @@ namespace Battleship
 
                         if (killed)
                         {
-                            foreach (Point p in units[index].body)
+                            foreach (ShipPoint p in units[index].body)
                             {
                                 map[p.X, p.Y] = CellState.killed;
                             }
@@ -115,6 +117,7 @@ namespace Battleship
             }
 
             invoker.Invoke(map);
+            return successShoot;
         }
 
         public void Process(string msg)
@@ -139,7 +142,7 @@ namespace Battleship
         {
             bool res = true;
 
-            foreach (Point p in ship.body)
+            foreach (ShipPoint p in ship.body)
             {
                 if (!IsGoodCell(p.X, p.Y))
                 {
@@ -159,7 +162,7 @@ namespace Battleship
 
         private void MarkLocation(Ship ship)
         {
-            foreach (Point p in ship.body)
+            foreach (ShipPoint p in ship.body)
             {
                 MarkCell(p.X, p.Y);
             }
