@@ -7,14 +7,6 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    public enum GameState
-    {
-        Start,
-        ShipPlacement,
-        Play
-    }
-
-    
 
     public enum CellState
     {
@@ -31,18 +23,20 @@ namespace Battleship
     public class Brain
     {
 
-        string[] st = { "1", "1", "1", "1", "2", "2", "2", "3", "3", "4" };
-        int stIndex = 0;
+        public ShipType[] st = { ShipType.D1, ShipType.D1, ShipType.D1, ShipType.D1,
+                          ShipType.D2, ShipType.D2, ShipType.D2,
+                          ShipType.D3, ShipType.D3,
+                          ShipType.D4};
+
+        public int stIndex = -1;
 
         CellState[,] map = new CellState[10, 10];
         List<Ship> units = new List<Ship>();
 
-        public GameState currentState;
         MyDelegate invoker;
         public Brain(MyDelegate invoker)
         {
             this.invoker = invoker;
-            currentState = GameState.Start;
             for (int i = 0; i < 10; ++i)
             {
                 for (int j = 0; j < 10; ++j)
@@ -67,6 +61,48 @@ namespace Battleship
                     break;
                 case CellState.busy:
                     map[i, j] = CellState.striked;
+                    int index = -1;
+                    for(int k = 0; k < units.Count; ++k)
+                    {
+                        foreach(Point p in units[k].body)
+                        {
+                            if(p.X == i && p.Y == j)
+                            {
+                                index = k;
+                                break;
+                            }
+                        }
+                        if(index != -1)
+                        {
+                            break;
+                        }
+
+                    }
+
+
+
+                    if (index != -1)
+                    {
+                        bool killed = true;
+
+                        foreach (Point p in units[index].body)
+                        {
+                            if (map[p.X, p.Y] != CellState.striked)
+                            {
+                                killed = false;
+                                break;
+                            }
+                        }
+
+                        if (killed)
+                        {
+                            foreach (Point p in units[index].body)
+                            {
+                                map[p.X, p.Y] = CellState.killed;
+                            }
+                        }
+                    }
+
                     break;
                 case CellState.striked:
                     break;
@@ -77,17 +113,8 @@ namespace Battleship
                 default:
                     break;
             }
-        }
 
-        public void Empty(bool isInput, int i, int j)
-        {
-            if (isInput)
-            {
-                
-            }else
-            {
-
-            }
+            invoker.Invoke(map);
         }
 
         public void Process(string msg)
@@ -96,28 +123,9 @@ namespace Battleship
             int i = int.Parse(val[0]);
             int j = int.Parse(val[1]);
             Point p = new Point(i, j);
-            switch (currentState)
-            {
-                case GameState.Start:
-                    Start(false, p);
-                    break;
-                case GameState.ShipPlacement:
-                    ShipPlacement(false, p);
-                    break;
-                case GameState.Play:
-                    Play(false, p);
-                    break;
-                default:
-                    break;
-            }
-        }
 
-        public void Play(bool isInput, Point p)
-        {
-            if (isInput)
-            {
-                currentState = GameState.Play;
-            }
+            ShipPlacement(p);
+            
         }
 
         private bool IsGoodCell(int i, int j)
@@ -158,211 +166,22 @@ namespace Battleship
         }
 
 
-        public void Start(bool isInput, Point p)
+        public void ShipPlacement(Point p)
         {
-            Ship ship = new Ship(p, ShipType.D1);
-
-            if (isInput)
+            if (stIndex + 1 < st.Length)
             {
-                currentState = GameState.Start;
-            }
-            else
-            {
-                if (IsGoodLocated(ship))
-                {
+                stIndex++;
+                Ship ship = new Ship(p, st[stIndex]);
+                if (IsGoodLocated(ship)) {
                     units.Add(ship);
-                    Ship1Da(true, p);
+                    MarkLocation(ship);
+                    invoker.Invoke(map);
+                }else
+                {
+                    stIndex--;
                 }
             }
         }
-        public void Ship4Da(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D4);
-
-            if (isInput)
-            {
-                currentState = GameState.Ship4Da;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                Play(true, p);
-            }
-        }
-        public void Ship3Da(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D3);
-
-            if (isInput)
-            {
-                currentState = GameState.Ship3Da;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship3Db(true, p);
-                }
-            }
-        }
-        public void Ship3Db(bool isInput, Point p)
-        {
-
-            if (isInput)
-            {
-                Ship ship = new Ship(p, ShipType.D3);
-
-                currentState = GameState.Ship3Db;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                Ship ship = new Ship(p, ShipType.D4);
-
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship4Da(true, p);
-                }
-            }
-        }
-        public void Ship2Da(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D2);
-            if (isInput)
-            {
-                currentState = GameState.Ship2Da;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship2Db(true, p);
-                }
-            }
-        }
-        public void Ship2Db(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D2);
-            if (isInput)
-            {
-                currentState = GameState.Ship2Db;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship2Dc(true, p);
-                }
-            }
-        }
-        public void Ship2Dc(bool isInput, Point p)
-        {
-            if (isInput)
-            {
-                Ship ship = new Ship(p, ShipType.D2);
-
-                currentState = GameState.Ship2Dc;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                Ship ship = new Ship(p, ShipType.D3);
-
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship3Da(true, p);
-                }
-            }
-        }
-        public void Ship1Da(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D1);
-            if (isInput)
-            {
-                currentState = GameState.Ship1Da;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship1Db(true, p);
-                }
-            }
-        }
-        public void Ship1Db(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D1);
-            if (isInput)
-            {
-                currentState = GameState.Ship1Db;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship1Dc(true, p);
-                }
-            }
-        }
-        public void Ship1Dc(bool isInput, Point p)
-        {
-            Ship ship = new Ship(p, ShipType.D1);
-            if (isInput)
-            {
-                currentState = GameState.Ship1Db;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship1Dc(true, p);
-                }
-            }
-        }
-        public void Ship1Dd(bool isInput, Point p)
-        {
-            if (isInput)
-            {
-                Ship ship = new Ship(p, ShipType.D1);
-                currentState = GameState.Ship1Dd;
-                MarkLocation(ship);
-                invoker.Invoke(map);
-            }
-            else
-            {
-                Ship ship = new Ship(p, ShipType.D2);
-                if (IsGoodLocated(ship))
-                {
-                    units.Add(ship);
-                    Ship2Da(true, p);
-                }
-            }
-        }
-
 
     }
 }

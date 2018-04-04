@@ -20,7 +20,7 @@ namespace Battleship
         Bot
     }
 
-    class PlayerPanel:Panel
+    class PlayerPanel : Panel
     {
         Brain brain;
         int cellW = 20;
@@ -35,16 +35,16 @@ namespace Battleship
             Initialize();
             Random rnd = new Random();
 
-            //if (playerType == PlayerType.Bot)
-            //{
-            //    while (brain.currentState != GameState.Play)
-            //    {
-            //        int row = rnd.Next(0, 10);
-            //        int column = rnd.Next(0, 10);
-            //        string msg = string.Format("{0}_{1}", row, column);
-            //        brain.Process(msg);
-            //    }
-            //}
+            if (playerType == PlayerType.Bot)
+            {
+                while (brain.stIndex < brain.st.Length - 1)
+                {
+                    int row = rnd.Next(0, 10);
+                    int column = rnd.Next(0, 10);
+                    string msg = string.Format("{0}_{1}", row, column);
+                    brain.Process(msg);
+                }
+            }
         }
 
         private void Initialize()
@@ -78,17 +78,27 @@ namespace Battleship
         private void Btn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            brain.Process(btn.Name);
+            if (brain.stIndex < brain.st.Length - 1)
+            {
+                brain.Process(btn.Name);
+            }
+            else
+            {
+                brain.Process2(btn.Name);
+            }
         }
 
         private void ChangeButton(CellState[,] map)
         {
-            Color colorToFill = Color.White;
+           
 
             for (int i = 0; i < 10; ++i)
             {
                 for (int j = 0; j < 10; ++j)
                 {
+                    Color colorToFill = Color.White;
+                    bool isEnabled = true;
+
                     switch (map[i, j])
                     {
                         case CellState.empty:
@@ -99,18 +109,22 @@ namespace Battleship
                             break;
                         case CellState.striked:
                             colorToFill = Color.Yellow;
+                            isEnabled = false;
                             break;
                         case CellState.missed:
                             colorToFill = Color.Gray;
+                            isEnabled = false;
                             break;
                         case CellState.killed:
                             colorToFill = Color.Red;
+                            isEnabled = false;
                             break;
                         default:
                             break;
                     }
 
                     this.Controls[10 * i + j].BackColor = colorToFill;
+                    this.Controls[10 * i + j].Enabled = isEnabled;
                 }
             }
 
