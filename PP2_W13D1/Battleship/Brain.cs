@@ -10,18 +10,11 @@ namespace Battleship
     public enum GameState
     {
         Start,
-        Ship4Da,
-        Ship3Da,
-        Ship3Db,
-        Ship2Da,
-        Ship2Db,
-        Ship2Dc,
-        Ship1Da,
-        Ship1Db,
-        Ship1Dc,
-        Ship1Dd,
+        ShipPlacement,
         Play
     }
+
+    
 
     public enum CellState
     {
@@ -37,6 +30,10 @@ namespace Battleship
 
     public class Brain
     {
+
+        string[] st = { "1", "1", "1", "1", "2", "2", "2", "3", "3", "4" };
+        int stIndex = 0;
+
         CellState[,] map = new CellState[10, 10];
         List<Ship> units = new List<Ship>();
 
@@ -104,35 +101,8 @@ namespace Battleship
                 case GameState.Start:
                     Start(false, p);
                     break;
-                case GameState.Ship4Da:
-                    Ship4Da(false, p);
-                    break;
-                case GameState.Ship3Da:
-                    Ship3Da(false, p);
-                    break;
-                case GameState.Ship3Db:
-                    Ship3Db(false, p);
-                    break;
-                case GameState.Ship2Da:
-                    Ship2Da(false, p);
-                    break;
-                case GameState.Ship2Db:
-                    Ship2Db(false, p);
-                    break;
-                case GameState.Ship2Dc:
-                    Ship2Dc(false, p);
-                    break;
-                case GameState.Ship1Da:
-                    Ship1Da(false, p);
-                    break;
-                case GameState.Ship1Db:
-                    Ship1Db(false, p);
-                    break;
-                case GameState.Ship1Dc:
-                    Ship1Dc(false, p);
-                    break;
-                case GameState.Ship1Dd:
-                    Ship1Dd(false, p);
+                case GameState.ShipPlacement:
+                    ShipPlacement(false, p);
                     break;
                 case GameState.Play:
                     Play(false, p);
