@@ -1,0 +1,13 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\MySQLSample.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\Database1.mdf
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\Database1_log.ldf
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\MySQLSample.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\MySQLSample.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\obj\Debug\MySQLSample.csprojResolveAssemblyReference.cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\obj\Debug\MySQLSample.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\obj\Debug\MySQLSample.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\obj\Debug\MySQLSample.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\obj\Debug\MySQLSample.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\obj\Debug\MySQLSample.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\MySql.Data.dll
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample\bin\Debug\MySql.Data.xml

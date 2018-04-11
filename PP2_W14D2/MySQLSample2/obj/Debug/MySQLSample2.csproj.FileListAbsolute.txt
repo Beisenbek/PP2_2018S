@@ -1,0 +1,10 @@
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\bin\Debug\MySQLSample2.exe.config
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\bin\Debug\MySQLSample2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\bin\Debug\MySQLSample2.pdb
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\bin\Debug\MySql.Data.dll
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\bin\Debug\MySql.Data.xml
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\obj\Debug\MySQLSample2.Form1.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\obj\Debug\MySQLSample2.Properties.Resources.resources
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\obj\Debug\MySQLSample2.csproj.GenerateResource.Cache
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\obj\Debug\MySQLSample2.exe
+C:\Users\b.baisakov\Documents\PP2_2018S\PP2_W14D2\MySQLSample2\obj\Debug\MySQLSample2.pdb

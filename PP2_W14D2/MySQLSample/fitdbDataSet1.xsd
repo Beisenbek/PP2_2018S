@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fitdbDataSet" targetNamespace="http://tempuri.org/fitdbDataSet1.xsd" xmlns:mstns="http://tempuri.org/fitdbDataSet1.xsd" xmlns="http://tempuri.org/fitdbDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fitdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fitdbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MySQLSample.Properties.Settings.GlobalReference.Default.fitdbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customers2TableAdapter" GeneratorDataComponentClassName="customers2TableAdapter" Name="customers2" UserDataComponentName="customers2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fitdbConnectionString (Settings)" DbObjectName="fitdb.customers2" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country FROM customers2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fitdbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fitdbDataSet" msprop:Generator_UserDSName="fitdbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="customers2" msprop:Generator_TableClassName="customers2DataTable" msprop:Generator_TableVarName="tablecustomers2" msprop:Generator_TablePropName="customers2" msprop:Generator_RowDeletingName="customers2RowDeleting" msprop:Generator_RowChangingName="customers2RowChanging" msprop:Generator_RowEvHandlerName="customers2RowChangeEventHandler" msprop:Generator_RowDeletedName="customers2RowDeleted" msprop:Generator_UserTableName="customers2" msprop:Generator_RowChangedName="customers2RowChanged" msprop:Generator_RowEvArgName="customers2RowChangeEvent" msprop:Generator_RowClassName="customers2Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

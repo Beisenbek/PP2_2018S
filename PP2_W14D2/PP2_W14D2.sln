@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLSample", "MySQLSample\MySQLSample.csproj", "{5C0388BB-FE33-4D00-BDB1-6234A973E387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLSample2", "MySQLSample2\MySQLSample2.csproj", "{93C66CE8-1860-45D3-9EDD-A8E0CAB49F8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C0388BB-FE33-4D00-BDB1-6234A973E387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0388BB-FE33-4D00-BDB1-6234A973E387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0388BB-FE33-4D00-BDB1-6234A973E387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0388BB-FE33-4D00-BDB1-6234A973E387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C66CE8-1860-45D3-9EDD-A8E0CAB49F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C66CE8-1860-45D3-9EDD-A8E0CAB49F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C66CE8-1860-45D3-9EDD-A8E0CAB49F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C66CE8-1860-45D3-9EDD-A8E0CAB49F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
